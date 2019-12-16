@@ -9,12 +9,15 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import Divider from "@material-ui/core/Divider";
 
 
+
+// NA XRHSIMOPOIHTHEI H MAP GIA NA EXW ENA MONO LIST ITEM
+
 function MenuListItems() {
     return (
         <div>
             <ListItem button key="Αρχική">
                 <ListItemIcon>
-                    <HomeIcon />
+                    <HomeIcon />                             
                 </ListItemIcon>
                 <ListItemText primary="Αρχική" />
             </ListItem>

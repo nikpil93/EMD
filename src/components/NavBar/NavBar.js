@@ -150,5 +150,6 @@ export default function MiniDrawer() {
                 </List>
             </Drawer>
         </div>
+        
     );
 }

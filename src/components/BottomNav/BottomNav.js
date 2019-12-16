@@ -7,14 +7,12 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    position: "fixed",
-    bottom: 0,
+    position: "absolute",
     background: "linear-gradient(63deg, rgba(219,218,240,1) 27%, rgba(175,175,209,1) 52%, rgba(80,80,204,1) 73%, rgba(27,22,128,1) 95%)",
     width: "100%",
     textAlign: "center"
   },
   social: {
-
     margin: "auto 0 auto auto",
   },
   socialButtons: {
