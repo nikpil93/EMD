@@ -1,45 +1,66 @@
-import React, { useGlobal, setGlobal } from 'reactn';
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import React, { useEffect, useGlobal, setGlobal } from 'reactn'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { fetchSponsors } from '../../axios/Axios'
 
 import Home from '../../views/Home/Home'
-import Schedule from '../../views/Schedule/Schedule';
-import Blog from '../../views/Blog/Blog';
-import Contact from '../../views/Contact/Contact';
-import Error from '../../views/Error/Error';
+import Events from '../../views/Events/Events'
+import Blog from '../../views/Blog/Blog'
+import Contact from '../../views/Contact/Contact'
+import Error from '../../views/Error/Error'
 
-import NavBar from "../NavBar/NavBar";
-import BottomNav from "../BottomNav/BottomNav";
-import Layout from '../Layout/Layout';
+import NavBar from "../NavBar/NavBar"
+import BottomNav from "../BottomNav/BottomNav"
 
-/*
-  setGlobal({
-    sponsorState: {
-      fetchingSponsor: true,
-      sponsor: [],
-      sponsorError: null,
-    },
-  });
-*/
+
+setGlobal({
+  sponsorState: {
+    fetchingSponsor: true,
+    sponsor: [],
+    sponsorError: null,
+  },
+  articleState: {
+    fetchingArticle: true,
+    article: [],
+    articleError: null,
+  },
+
+})
+
 
 const App = () => {
 
-/*  const [sponsorState, setSponsorState] = useGlobal('sponsorState'); */
+  const [sponsorState, setSponsorState] = useGlobal('sponsorState')
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setSponsorState({
+        ...sponsorState,
+        fetchingSponsor: true
+      });
+      const sponsors = await fetchSponsors()
+      setSponsorState({
+        ...sponsorState,
+        fetchingSponsor: false,
+        sponsor: sponsors
+      })
+    }
+    fetchData()
+  }, [])
 
   return (
     <div className="App">
-
-        <BrowserRouter>
-        <NavBar/>
-          <Switch>
+      <BrowserRouter>
+        <NavBar />
+        <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/schedule" component={Schedule} />
+          <Route path="/schedule" component={Events} />
           <Route path="/articles" component={Blog} />
           <Route path="/contact" component={Contact} />
           <Route component={Error} />
-          </Switch>
-          <Layout />
-          <BottomNav />
-        </BrowserRouter>
+        </Switch>
+        <BottomNav />
+      </BrowserRouter>
     </div>
   );
 }

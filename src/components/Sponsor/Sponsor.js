@@ -9,12 +9,8 @@ const useStyles = makeStyles(theme => ({
     }
   }));
 
-const Sponsor = ({ title, url, loading }) => {
+const Sponsor = ({ title, url }) => {
     const classes = useStyles();
-
-    if (loading) {
-        return <h2> loading bro... </h2>;
-    }
 
     return (
         <div className={classes.root}>
