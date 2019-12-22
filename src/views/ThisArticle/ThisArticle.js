@@ -15,10 +15,20 @@ function ThisArticle() {
         useEffect(() => {
             console.log(thisArticle)
             const fetchData = async () => {
-                setThisArticle({ ...thisArticle, fetchingArticle: true })
+                setThisArticle(
+                    { 
+                        ...thisArticle,
+                        fetchingArticle: true 
+                    }
+                )
                 console.log(thisArticle)
                 const article = await fetchArticle();
-                setThisArticle({ ...thisArticle, fetchingArticle: false, article: article })
+                setThisArticle(
+                    { ...thisArticle,
+                        fetchingArticle: false,
+                        article: article 
+                        }
+                    )
                 console.log(thisArticle)
             };
             
