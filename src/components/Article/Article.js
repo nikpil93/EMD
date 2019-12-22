@@ -6,16 +6,17 @@ import Typography from "@material-ui/core/Typography"
 const useStyles = makeStyles(theme => ({
     root: {
         padding: theme.spacing(3, 2),
-        marginTop: "8px",
+        margin: "4px 0 4px 0",
     }
 }));
 
-const Article = ({ title, body }) => {
+const Article = ({ id, title, body }) => {
     const classes = useStyles();
 
+
+
     return (
-        <div>
-            <Paper className={classes.root}>
+             <Paper className={classes.root}>
                 <Typography variant="h5" component="h3">
                     {title}
                 </Typography>
@@ -23,7 +24,6 @@ const Article = ({ title, body }) => {
                     {body}
                 </Typography>
             </Paper>
-        </div>
     )
 }
 
