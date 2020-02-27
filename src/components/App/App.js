@@ -4,9 +4,7 @@ import { fetchSponsors } from '../../axios/Axios'
 
 import Home from '../../views/Home/Home'
 import Events from '../../views/Events/Events'
-import Blog from '../../views/Blog/Blog'
 import Contact from '../../views/Contact/Contact'
-import ThisArticle from '../../views/ThisArticle/ThisArticle'
 import Error from '../../views/Error/Error'
 
 
@@ -19,13 +17,7 @@ setGlobal({
     fetchingSponsor: true,
     sponsor: [],
     sponsorError: null,
-  },
-  articleState: {
-    fetchingArticle: true,
-    article: [],
-    articleError: null,
-  },
-
+  }
 })
 
 
@@ -45,7 +37,7 @@ const App = () => {
         ...sponsorState,
         fetchingSponsor: false,
         sponsor: sponsors
-      })
+      })      
     }
     fetchData()
   }, [])
@@ -57,8 +49,6 @@ const App = () => {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/schedule" component={Events} exact />
-          <Route path="/articles" component={Blog} exact />
-          <Route path="/article/:uuid" component={ThisArticle} exact />
           <Route path="/contact" component={Contact} exact />
           <Route component={Error} />
         </Switch>

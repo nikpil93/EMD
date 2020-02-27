@@ -1,13 +1,11 @@
 import React from 'react'
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from '@material-ui/core';
-
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import HomeIcon from "@material-ui/icons/Home";
 import EventIcon from "@material-ui/icons/Event";
-import MenuBookIcon from "@material-ui/icons/MenuBook";
 import PhoneIcon from "@material-ui/icons/Phone";
 import Divider from "@material-ui/core/Divider";
 
@@ -18,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-// NA XRHSIMOPOIHTHEI H MAP GIA NA EXW ENA MONO LIST ITEM
+// NA XRHSIMOPOIHTHEI H MAP GIA NA EXW ENA MONO LIST ITEM?? & ARTICLE SE SXOLIA GIA PERIPTWSH GALLERY
 
 function MenuListItems() {
     const classes = useStyles();
@@ -47,7 +45,7 @@ function MenuListItems() {
 
             <Divider />
 
-            <Link href="/articles" className={classes.root}>
+            {/* <Link href="/articles" className={classes.root}>
                 <ListItem button key="Άρθρα">
                     <ListItemIcon>
                         <MenuBookIcon />
@@ -56,7 +54,7 @@ function MenuListItems() {
                 </ListItem>
             </Link>
 
-            <Divider />
+            <Divider /> */}
 
             <Link href="/contact" className={classes.root}>
                 <ListItem button key="Επικοινωνία">

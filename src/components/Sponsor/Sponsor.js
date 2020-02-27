@@ -9,19 +9,17 @@ const useStyles = makeStyles(theme => ({
     }
   }));
 
-const Sponsor = ({ title, url }) => {
+const Sponsor = ({ url }) => {
     const classes = useStyles();
 
     return (
         <div className={classes.root}>
             <CardImageButton 
                 url={url}
-                height="200px"
-                title={title}
             >
             </CardImageButton>
         </div>
-    );
-};
+    )
+}
 
 export default Sponsor;

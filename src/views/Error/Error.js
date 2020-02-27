@@ -16,21 +16,23 @@ function Error() {
     const classes = useStyles()
 
     return (
+        <Fragment>
             <Layout>
                 <div className={classes.root}>
-                    <h1>Κάτι πήγε στραβά...</h1>
-                    <h2>Δυστυχώς η σελίδα που αναζητήσατε δεν βρέθηκε,
-                        <br/> εαν επιθυμείτε επιστρέψτε στην αρχική σελίδα</h2>
-                    <ButtonGroup
-                        variant="contained"
-                        color="primary"
-                        aria-label="full-width contained primary button group"
-                    >
-                        <Button href="/">Αρχική σελίδα</Button>
-                    </ButtonGroup>
+                <h1>Κάτι πήγε στραβά...</h1>
+                <h2>Δυστυχώς η σελίδα που αναζητήσατε δεν βρέθηκε,
+                    <br/> εαν επιθυμείτε επιστρέψτε στην αρχική σελίδα</h2>
+                <ButtonGroup
+                    variant="contained"
+                    color="primary"
+                    aria-label="full-width contained primary button group"
+                >
+                    <Button href="/">Αρχική σελίδα</Button>
+                </ButtonGroup>
                 </div>
             </Layout>
-            
+        </Fragment>
+         
     )
 }
 
