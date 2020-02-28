@@ -10,11 +10,11 @@ const useStyles = makeStyles(theme => ({
         maxWidth: "calc(100% - 78px)",
         minHeight: "calc(100vh - 231px)",
     },
-}));
+}))
 
 
 const Layout = ({ children }) => {
-    const classes = useStyles();
+    const classes = useStyles()
     const [sponsorState] = useGlobal('sponsorState')
 
     return (

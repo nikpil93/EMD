@@ -1,25 +1,26 @@
 import React from 'react'
-import { makeStyles } from "@material-ui/core/styles";
-import { Link } from '@material-ui/core';
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import HomeIcon from "@material-ui/icons/Home";
-import EventIcon from "@material-ui/icons/Event";
-import PhoneIcon from "@material-ui/icons/Phone";
-import Divider from "@material-ui/core/Divider";
+import { makeStyles } from "@material-ui/core/styles"
+import { Link } from '@material-ui/core'
+import ListItem from "@material-ui/core/ListItem"
+import ListItemIcon from "@material-ui/core/ListItemIcon"
+import ListItemText from "@material-ui/core/ListItemText"
+import HomeIcon from "@material-ui/icons/Home"
+import EventIcon from "@material-ui/icons/Event"
+import PhoneIcon from "@material-ui/icons/Phone"
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary'
+import Divider from "@material-ui/core/Divider"
 
 
 const useStyles = makeStyles(theme => ({
     root: {
         textDecoration: "none !important",
     },
-}));
+}))
 
 // NA XRHSIMOPOIHTHEI H MAP GIA NA EXW ENA MONO LIST ITEM?? & ARTICLE SE SXOLIA GIA PERIPTWSH GALLERY
 
 function MenuListItems() {
-    const classes = useStyles();
+    const classes = useStyles()
 
     return (
         <div>
@@ -45,16 +46,16 @@ function MenuListItems() {
 
             <Divider />
 
-            {/* <Link href="/articles" className={classes.root}>
-                <ListItem button key="Άρθρα">
+            <Link href="/gallery" className={classes.root}>
+                <ListItem button key="Γκαλερί">
                     <ListItemIcon>
-                        <MenuBookIcon />
+                        <PhotoLibraryIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Άρθρα" />
+                    <ListItemText primary="Γκαλερί" />
                 </ListItem>
             </Link>
 
-            <Divider /> */}
+            <Divider />
 
             <Link href="/contact" className={classes.root}>
                 <ListItem button key="Επικοινωνία">

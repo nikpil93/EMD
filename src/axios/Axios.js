@@ -1,16 +1,16 @@
 import axios from 'axios'
 
 export const fetchSponsors = async () => {
-    const response = await axios.get("http://jsonplaceholder.typicode.com/photos?_start=0&_limit=2");
-    const sponsors = response.data;
-    return sponsors;
-};
+    const response = await axios.get("http://jsonplaceholder.typicode.com/photos?_start=0&_limit=2")
+    const sponsors = response.data
+    return sponsors
+}
 
 // export const fetchSchedule = async () => {
-//     const response = await axios.get("../timeline.json");
-//     const schedule = response.data;
-//     return schedule;
-// };
+//     const response = await axios.get("../timeline.json")
+//     const schedule = response.data
+//     return schedule
+// }
 
 export const fetchSchedule = async () => {
     const arr = [

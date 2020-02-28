@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles"
 import CardImageButton from '../CardImageButton/CardImageButton'
 
 const useStyles = makeStyles(theme => ({
@@ -7,10 +7,10 @@ const useStyles = makeStyles(theme => ({
       paddingLeft: "3px", 
       marginTop: "8px",
     }
-  }));
+  }))
 
 const Sponsor = ({ url }) => {
-    const classes = useStyles();
+    const classes = useStyles()
 
     return (
         <div className={classes.root}>
@@ -22,4 +22,4 @@ const Sponsor = ({ url }) => {
     )
 }
 
-export default Sponsor;
+export default Sponsor

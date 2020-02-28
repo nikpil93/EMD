@@ -1,12 +1,12 @@
 import React, { useState,  useEffect } from 'react'
 
-import { VerticalTimeline }  from 'react-vertical-timeline-component';
+import { VerticalTimeline }  from 'react-vertical-timeline-component'
 
 import {fetchSchedule} from '../../axios/Axios'
 
 import Schedule from '../../components/Schedule/Schedule'
 import Layout from '../../components/Layout/Layout'
-import 'react-vertical-timeline-component/style.min.css';
+import 'react-vertical-timeline-component/style.min.css'
 
 
 function Events() {

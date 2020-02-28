@@ -1,5 +1,5 @@
 import React from 'react'
-import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimelineElement }  from 'react-vertical-timeline-component'
 
 
 function Schedule({id, date, gr_name, gr_img, gr_link, text, pl_name, pl_link}) {

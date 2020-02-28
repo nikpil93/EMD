@@ -4,6 +4,7 @@ import { fetchSponsors } from '../../axios/Axios'
 
 import Home from '../../views/Home/Home'
 import Events from '../../views/Events/Events'
+import Gallery from '../../views/Gallery/Gallery'
 import Contact from '../../views/Contact/Contact'
 import Error from '../../views/Error/Error'
 
@@ -31,7 +32,7 @@ const App = () => {
       setSponsorState({
         ...sponsorState,
         fetchingSponsor: true
-      });
+      })
       const sponsors = await fetchSponsors()
       setSponsorState({
         ...sponsorState,
@@ -49,13 +50,14 @@ const App = () => {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/schedule" component={Events} exact />
+          <Route path="/gallery" component={Gallery} exact />
           <Route path="/contact" component={Contact} exact />
           <Route component={Error} />
         </Switch>
         <BottomNav />
       </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

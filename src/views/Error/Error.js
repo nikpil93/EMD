@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         textAlign: "center",
     }
-}));
+}))
 
 function Error() {
     const classes = useStyles()
