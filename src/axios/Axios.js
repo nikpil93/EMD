@@ -16,6 +16,7 @@ export const fetchSchedule = async () => {
     const arr = [
         {
             "id" : "1",
+            "date" : "26/08/1993",
             "gr_name" : "hpg",
             "gr_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
             "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
@@ -26,6 +27,7 @@ export const fetchSchedule = async () => {
         },
         {
             "id" : "2",
+            "date" : "26/08/1993",
             "gr_name" : "scorpions",
             "gr_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
             "text" : "sum quia dolor sit amet, consectetur, adipisci velit, sed quia n",
@@ -36,6 +38,7 @@ export const fetchSchedule = async () => {
         },
         {
             "id" : "3",
+            "date" : "26/08/1993",
             "gr_name" : "kotameta",
             "gr_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
             "text" : "citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis",
@@ -46,6 +49,7 @@ export const fetchSchedule = async () => {
         },
         {
             "id" : "4",
+            "date" : "26/08/1993",
             "gr_name" : "bebhlos",
             "gr_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
             "text" : " aute irure dolor in reprehenderit in",
@@ -56,6 +60,7 @@ export const fetchSchedule = async () => {
         },
         {
             "id" : "5",
+            "date" : "26/08/1993",
             "gr_name" : "whiteraven",
             "gr_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
             "text" : "voluptate velit esse cillum dolore eu fugiat nulla pariatumpo",

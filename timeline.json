@@ -1,6 +1,7 @@
 [
     {
         "id" : 1,
+        "date" : "26/08/1993",
         "gr_name" : "hpg",
         "gr_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
         "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo",
@@ -11,6 +12,7 @@
     },
     {
         "id" : 2,
+        "date" : "26/08/1993",
         "gr_name" : "scorpions",
         "gr_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
         "text" : "sum quia dolor sit amet, consectetur, adipisci velit, sed quia n",
@@ -21,6 +23,7 @@
     },
     {
         "id" : 3,
+        "date" : "26/08/1993",
         "gr_name" : "kotameta",
         "gr_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
         "text" : "citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis",
@@ -31,6 +34,7 @@
     },
     {
         "id" : 4,
+        "date" : "26/08/1993",
         "gr_name" : "bebhlos",
         "gr_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
         "text" : " aute irure dolor in reprehenderit in",
@@ -41,6 +45,7 @@
     },
     {
         "id" : 5,
+        "date" : "26/08/1993",
         "gr_name" : "whiteraven",
         "gr_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
         "text" : "voluptate velit esse cillum dolore eu fugiat nulla pariatumpo",
@@ -48,7 +53,6 @@
         "pl_name" : "Neon",
         "pl_img" : "https://i.picsum.photos/id/1036/200/200.jpg",
         "pl_link" : "http://toneon.gr/"
-    },
-    
+    }
 ]
     
