@@ -7,7 +7,7 @@ import Sponsor from "../Sponsor/Sponsor"
 const useStyles = makeStyles(theme => ({
     root: {
         margin: "105px 10px 70px 68px",
-        maxWidth: "calc(100% - 78px)",
+        maxWidth: "calc(100% - 80px)",
         minHeight: "calc(100vh - 231px)",
     },
 }))

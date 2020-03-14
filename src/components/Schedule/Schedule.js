@@ -27,9 +27,9 @@ function Schedule({id, date, gr_name, gr_img, gr_link, text, pl_name, pl_link}) 
             <VerticalTimelineElement
                 id="debug"
                 className = {`vertical-timeline-element--work ${classes.root}`}
-                contentStyle = {{ background: '#ffffff', color: '#000', boxShadow: "0px 0px 6px 3px lightblue"}}
+                contentStyle = {{opacity: "84%", background: '#ffffff', color: '#000', boxShadow: "0px 0px 6px 3px lightblue"}}
                 contentArrowStyle = {{ borderRight: '7px solid lightblue ' }}
-                iconStyle = {{ background: 'lightblue'}}
+                iconStyle = {{ background: '#b4b4e4'}}
                 position = {id%2 !== 0 ? "left" : "right"}
                 >
                 <h1 
@@ -37,7 +37,11 @@ function Schedule({id, date, gr_name, gr_img, gr_link, text, pl_name, pl_link}) 
                     Το συγκρότημα {gr_name}
                 </h1>
                 <h4>Στις {date}</h4>
-                <img src = {gr_img} alt="group"/>
+                <img 
+                className={classes.image}
+                src = {gr_img} 
+                alt="group"
+                />
                 <p>{text}</p>
                 <br/>
                 <a 
