@@ -9,7 +9,8 @@ const useStyles = makeStyles({
     position: "absolute",
     backgroundColor: "#3f51b5",
     width: "100%",
-    textAlign: "center"
+    textAlign: "center",
+    boxShadow : "20px 5px 15px 0px black"
   },
   social: {
     margin: "auto 0 auto auto",
