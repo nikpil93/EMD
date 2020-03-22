@@ -1,19 +1,18 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 
 import Album from "../../components/Album/Album"
-
 import Layout from '../../components/Layout/Layout'
-import BackgroundImage from "../../components/BackgroundImage/backgroundImage";
+import BackgroundImage from "../../components/BackgroundImage/BackgroundImage";
 
 function Gallery() {
+    
     return (
-        <Fragment>
+        <React.Fragment>
             <BackgroundImage/>
             <Layout>
                 <Album/>
             </Layout>
-        </Fragment>
+        </React.Fragment>
     )
 }
-
 export default Gallery

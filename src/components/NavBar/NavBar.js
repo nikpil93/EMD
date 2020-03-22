@@ -101,7 +101,7 @@ export default function MiniDrawer() {
     }
 
     return (
-        <div className={classes.root}>
+        <React.Fragment className={classes.root}>
             <CssBaseline />
             <AppBar
                 position="fixed"
@@ -159,7 +159,7 @@ export default function MiniDrawer() {
                     <MenuListItems />
                 </List>
             </Drawer>
-        </div>
+        </React.Fragment>
         
     )
 }

@@ -1,11 +1,10 @@
 import React, { useGlobal } from "reactn"
+
 import { makeStyles } from "@material-ui/core/styles"
 import Link from "@material-ui/core/Link"
-
 import Grid from "@material-ui/core/Grid"
+
 import Sponsor from "../Sponsor/Sponsor"
-import BackgroundImage from "../BackgroundImage/backgroundImage";
-import SocialBar from "../FixSocial/FixSocial";
 
 const useStyles = makeStyles(theme => ({
     grid: {
@@ -39,11 +38,9 @@ const Layout = ({ children }) => {
 
     return (
         <Grid container className={classes.grid}>
-
             <Grid className={classes.main} item xl={10} md={10} sm={12} xs={12}>
                 {children}
             </Grid>
-
             <Grid item xl={2} md={2} sm={6} xs={6} className={classes.sponsor}>
             {sponsorState.sponsor.map(item => (
                 <Sponsor
@@ -52,15 +49,13 @@ const Layout = ({ children }) => {
                     title={item.title}
                 />
             ))}
-            {
-                !document.location.pathname.includes("contact") ? 
+            {!document.location.pathname.includes("contact") ? 
                 <Link 
                 className={classes.link}
                 href="/contact">
                 Διαφημιστείτε Eδώ / Στείλτε μας μήνυμα
                 </Link> :
-                null
-            }
+                null}
             </Grid>
         </Grid>
     )

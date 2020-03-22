@@ -13,8 +13,7 @@ const useStyles = makeStyles({
         textDecoration: "none"
     },
     image: {
-        borderRadius: "6px"
-        
+        borderRadius: "6px" 
     }
 })
 
@@ -22,8 +21,7 @@ function Schedule({id, date, gr_name, gr_img, gr_link, text, pl_name, pl_link}) 
     const classes = useStyles()
     
     return (
-        <div>
-            
+        <React.Fragment>  
             <VerticalTimelineElement
                 id="debug"
                 className = {`vertical-timeline-element--work ${classes.root}`}
@@ -59,7 +57,7 @@ function Schedule({id, date, gr_name, gr_img, gr_link, text, pl_name, pl_link}) 
                     Η σελίδα του μαγαζιού
                 </a>
             </VerticalTimelineElement>
-        </div>
+        </React.Fragment>
     )
 }
 

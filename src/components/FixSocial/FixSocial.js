@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { makeStyles } from "@material-ui/core/styles";
+
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -31,7 +33,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const SocialBar = () => {
-
     const classes = useStyles();
 
     return (

@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import { makeStyles } from "@material-ui/core/styles"
 
 import Layout from '../../components/Layout/Layout'
-
 import Button from '@material-ui/core/Button'
 import ButtonGroup from '@material-ui/core/ButtonGroup'
 

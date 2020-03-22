@@ -3,9 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
-
-
 
 const useStyles = makeStyles ({
     root:{
@@ -26,9 +23,7 @@ const useStyles = makeStyles ({
         justifyContent: "center",
         padding: "3rem"
     }
-
 });
-
 
 const InfoEmdR = ({img, text}) => {
 
@@ -36,10 +31,7 @@ const InfoEmdR = ({img, text}) => {
 
     return (
 
-        <Container maxWidth='lg' >
-            {/*<div className = {classes.root}>
-
-            </div>*/}
+        <Container maxWidth='lg'>
             <Grid container className = {classes.root}>
                 <Grid item xs={12} md={6}>
                     <Paper className={classes.paper}>

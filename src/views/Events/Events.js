@@ -1,15 +1,11 @@
-import React, {useState, useEffect, Fragment} from 'react'
+import React, {useState, useEffect} from 'react'
+
 import { VerticalTimeline }  from 'react-vertical-timeline-component'
-
 import {fetchSchedule} from '../../axios/Axios'
-
 import Schedule from '../../components/Schedule/Schedule'
 import Layout from '../../components/Layout/Layout'
 import 'react-vertical-timeline-component/style.min.css'
-import BackgroundImage from "../../components/BackgroundImage/backgroundImage";
-
-
-
+import BackgroundImage from "../../components/BackgroundImage/BackgroundImage";
 
 function Events() {
     const [scheduleState, setScheduleState] = useState({schedule: []})
@@ -26,8 +22,7 @@ function Events() {
     }, [])
     
     return (
-
-        <Fragment>
+        <React.Fragment>
             <BackgroundImage/>
             <Layout>
                 <VerticalTimeline>
@@ -45,7 +40,7 @@ function Events() {
                     ))}
                 </VerticalTimeline>
             </Layout>
-        </Fragment>
+        </React.Fragment>
     )
 }
 

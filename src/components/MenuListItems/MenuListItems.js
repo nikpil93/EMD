@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { makeStyles } from "@material-ui/core/styles"
 import { Link } from '@material-ui/core'
 import ListItem from "@material-ui/core/ListItem"
@@ -21,7 +22,7 @@ function MenuListItems() {
     const classes = useStyles()
 
     return (
-        <div>
+        <React.Fragment>
             <Link href="/" className={classes.root}> 
                 <ListItem button key="Αρχική">
                     <ListItemIcon>
@@ -65,7 +66,7 @@ function MenuListItems() {
             </Link>
 
             <Divider />
-        </div>
+        </React.Fragment>
     )
 }
 

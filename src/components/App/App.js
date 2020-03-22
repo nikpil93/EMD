@@ -1,5 +1,6 @@
 import React, { useEffect, useGlobal, setGlobal } from 'reactn'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 import { fetchSponsors } from '../../axios/Axios'
 
 import Home from '../../views/Home/Home'
@@ -24,7 +25,6 @@ setGlobal({
 
 
 const App = () => {
-
   const [sponsorState, setSponsorState] = useGlobal('sponsorState')
 
 
