@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles"
 
 import Grid from "@material-ui/core/Grid"
 import Sponsor from "../Sponsor/Sponsor"
+import BackgroundImage from "../BackgroundImage/backgroundImage";
+import SocialBar from "../FixSocial/FixSocial";
 
 const useStyles = makeStyles(theme => ({
     root: {

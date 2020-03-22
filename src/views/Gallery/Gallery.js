@@ -1,14 +1,18 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 import Album from "../../components/Album/Album"
 
 import Layout from '../../components/Layout/Layout'
+import BackgroundImage from "../../components/BackgroundImage/backgroundImage";
 
 function Gallery() {
     return (
-        <Layout>
-            <Album/>
-        </Layout>
+        <Fragment>
+            <BackgroundImage/>
+            <Layout>
+                <Album/>
+            </Layout>
+        </Fragment>
     )
 }
 

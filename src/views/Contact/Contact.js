@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 import Typography from '@material-ui/core/Typography'
 
 import Layout from '../../components/Layout/Layout'
+import BackgroundImage from "../../components/BackgroundImage/backgroundImage";
 
 function Contact() {
 
@@ -13,12 +14,14 @@ function Contact() {
     //     message: "",
     // })
     return (
-        
-        <Layout>
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                Καλωσήρθατε στην σελίδα επικοινωνίας μας
-            </Typography>
-        </Layout>
+        <Fragment>
+            <BackgroundImage/>
+            <Layout>
+                <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+                    Καλωσήρθατε στην σελίδα επικοινωνίας μας
+                </Typography>
+            </Layout>
+        </Fragment>
     )
 }
 

@@ -11,6 +11,7 @@ import Error from '../../views/Error/Error'
 
 import NavBar from "../NavBar/NavBar"
 import BottomNav from "../BottomNav/BottomNav"
+import SocialBar from "../FixSocial/FixSocial";
 
 
 setGlobal({
@@ -47,6 +48,7 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <NavBar />
+        <SocialBar/>
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/schedule" component={Events} exact />
