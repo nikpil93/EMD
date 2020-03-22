@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles ({
     root:{
-
+        marginBottom: "25px"
     },
 
     img:{
@@ -40,7 +40,7 @@ const InfoEmdR = ({img, text}) => {
             {/*<div className = {classes.root}>
 
             </div>*/}
-            <Grid container>
+            <Grid container className = {classes.root}>
                 <Grid item xs={12} md={6}>
                     <Paper className={classes.paper}>
                         {text}
