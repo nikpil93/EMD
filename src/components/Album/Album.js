@@ -13,11 +13,16 @@ const useStyles = makeStyles(theme => ({
   cardGrid: {
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
+    
   },
   card: {
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
+    transition: "all .24s ease-in-out",
+    "&:hover": {
+      transform : "scale(1.08)"
+    },
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
@@ -48,7 +53,7 @@ export default function Album() {
 
             {cards.map(card => (
               <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
+                <Card className={`test ${classes.card}`}>
                   <CardMedia
                     className={classes.cardMedia}
                     image="https://source.unsplash.com/random"

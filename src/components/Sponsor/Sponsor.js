@@ -14,9 +14,7 @@ const Sponsor = ({ url }) => {
 
     return (
         <div className={classes.root}>
-            <CardImageButton 
-                url={url}
-            >
+            <CardImageButton url={url}>
             </CardImageButton>
         </div>
     )

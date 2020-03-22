@@ -17,8 +17,6 @@ const useStyles = makeStyles(theme => ({
     },
 }))
 
-// NA XRHSIMOPOIHTHEI H MAP GIA NA EXW ENA MONO LIST ITEM?? & ARTICLE SE SXOLIA GIA PERIPTWSH GALLERY
-
 function MenuListItems() {
     const classes = useStyles()
 

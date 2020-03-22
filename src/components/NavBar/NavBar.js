@@ -5,6 +5,7 @@ import Drawer from "@material-ui/core/Drawer"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import List from "@material-ui/core/List"
+import Link from "@material-ui/core/Link"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import Typography from "@material-ui/core/Typography"
 import Divider from "@material-ui/core/Divider"
@@ -36,7 +37,8 @@ const useStyles = makeStyles(theme => ({
         })
     },
     menuButton: {
-        //marginRight: 36
+        marginRight: 26,
+        marginLeft: -18
     },
     hide: {
         display: "none"
@@ -74,8 +76,14 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(3)
     },
     logo: {
+        color: "white",
+        fontSize: 18,
+        letterSpacing: 1.3,
+        textDecoration: "none!important",
         marginLeft: "auto",
-        marginTop: "7px",
+        "&:hover": {
+            transform: "scale(1.03)"
+        },
     }
 }))
 
@@ -116,9 +124,11 @@ export default function MiniDrawer() {
                     <Typography variant="h6" noWrap>
                         Ευρωπαϊκή Γιορτή της Μουσικής
                     </Typography>
-                    <div className={classes.logo}>
-                        <img src={require('../../media/emd.png')} alt="logo.png" />
-                    </div>
+                    <Link
+                        href="/home"
+                        className={classes.logo}>
+                        <em>EMD</em>
+                    </Link>
                 </Toolbar>
             </AppBar>
             <Drawer
